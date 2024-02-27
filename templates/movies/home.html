@@ -1,0 +1,9 @@
+{% extends 'movies/base.html' %}
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+<h1>this is the movie homepage</h1> 
+
+<button><a href="{% url 'movies' %}">go to movies</a></button>
+
+{% endblock %}

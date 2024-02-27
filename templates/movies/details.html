@@ -1,0 +1,15 @@
+{% extends 'movies/base.html' %}
+
+
+{% block content %}
+
+<li>{{movies.id}}</li>
+<li>{{movies.title}}</li>
+<li>released in {{movies.year}}</li>
+{% comment %} {{movies}} {% endcomment %}
+
+
+<button><a href='/movies/delete/{{movies.id}}'>delete</a></button>
+<button><a href='/movies/update/{{movies.id}}'>update</a></button>
+
+{% endblock %}
